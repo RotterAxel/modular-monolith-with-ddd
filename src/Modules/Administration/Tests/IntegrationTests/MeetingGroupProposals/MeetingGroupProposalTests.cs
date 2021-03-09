@@ -64,7 +64,7 @@ namespace CompanyName.MyMeetings.Modules.Administration.IntegrationTests.Meeting
         }
 
         [Test]
-        public async Task AcceptMeetingGroupProposal_WhenProposalIsAlreadyAccepted_BreaksMeetingGroupProposalCanBeVerifiedOnceRule()
+        public async Task AcceptMeetingGroupProposal_ProposalIsAlreadyAccepted_BreaksMeetingGroupProposalCanBeVerifiedOnceRule()
         {
             var proposalId = await AdministrationModule.ExecuteCommandAsync(new RequestMeetingGroupProposalVerificationCommand(
                 MeetingGroupProposalSampleData.MeetingGroupProposalId,
